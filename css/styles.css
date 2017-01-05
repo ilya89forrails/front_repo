@@ -1,0 +1,71 @@
+@font-face { 
+	font-family: Roboto-l; 
+	src: url('../fonts/roboto-light.ttf'); 
+} 
+
+@font-face { 
+	font-family: Roboto-m; 
+	src: url('../fonts/roboto-medium.ttf'); 
+}
+
+.profile {
+	text-align: center;
+	font-family: Roboto-l;
+}
+
+
+.profile__image {
+    border-radius: 50%;
+    margin: 5px;
+    align-content: center;
+}
+
+
+h3 {
+	margin-bottom: 0;
+	font-family: Roboto-l;
+}
+
+
+.profile__location {
+	color: grey;
+}
+
+.profile-info {
+
+}
+
+hr {
+	width: 250px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: lightgrey;
+}
+
+table {
+	width: 200px;
+	color: grey;
+	border-collapse: collapse;
+	margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+
+table td {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px;
+	border-color: lightgrey;
+}
+
+.profile-info__title {
+	text-align: left;
+	font-family: Roboto-m;
+
+}
+
+.profile-info__descr {
+	text-align: right;
+}
+
