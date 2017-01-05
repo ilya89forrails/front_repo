@@ -8,13 +8,12 @@
 	src: url('https://fonts.googleapis.com/css?family=Roboto:500'); 
 }
 
-.app__profile___2XNad {
+.Profile__profile___MhHcn {
 	text-align: center;
 	font-family: Roboto-l;
 }
 
-
-.app__profile__image___e5qj3 {
+.Profile__image___3nEn_ {
     border-radius: 50%;
     margin: 5px;
     align-content: center;
@@ -27,22 +26,17 @@ h3 {
 }
 
 
-.app__profile__location___rtSB8 {
+.Profile__location___1MWA_ {
 	color: grey;
 }
 
-.app__profile_info___39e1d {
-
-}
 
 hr {
 	width: 250px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	color: lightgrey;
-}
-
-table {
+}.Profile_info__info___3ofLz {
 	width: 200px;
 	color: grey;
 	border-collapse: collapse;
@@ -52,19 +46,19 @@ table {
 }
 
 
-table td {
+.Profile_info__info___3ofLz td {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-bottom: solid 1px;
 	border-color: lightgrey;
 }
 
-.app__profile_info__title___2UFuw {
+.Profile_info__title___37zPr {
 	text-align: left;
 	font-family: Roboto-m;
 
 }
 
-.app__profile_info__descr___4iuoP {
+.Profile_info__descr___1L0RE {
 	text-align: right;
 }

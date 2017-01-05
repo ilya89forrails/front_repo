@@ -13,8 +13,7 @@
 	font-family: Roboto-l;
 }
 
-
-.profile__image {
+.image {
     border-radius: 50%;
     margin: 5px;
     align-content: center;
@@ -27,44 +26,14 @@ h3 {
 }
 
 
-.profile__location {
+.location {
 	color: grey;
 }
 
-.profile_info {
-
-}
 
 hr {
 	width: 250px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	color: lightgrey;
-}
-
-table {
-	width: 200px;
-	color: grey;
-	border-collapse: collapse;
-	margin-left: auto;
-    margin-right: auto;
-    font-size: 12px;
-}
-
-
-table td {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border-bottom: solid 1px;
-	border-color: lightgrey;
-}
-
-.profile_info__title {
-	text-align: left;
-	font-family: Roboto-m;
-
-}
-
-.profile_info__descr {
-	text-align: right;
 }
