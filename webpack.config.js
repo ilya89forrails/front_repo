@@ -1,10 +1,21 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+var locals = {
+  routes: [
+    '/',
+  ]
+};
+
+
 module.exports = {
-  entry:  './src',
+  entry:  {
+    'main': './src/index',
+  },
   output: {
     path: 'build',
     filename: 'bundle.js',
+    libraryTarget: 'umd' 
   },
   module: {
     loaders: [
@@ -20,6 +31,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin("styles.css")
+    new ExtractTextPlugin("styles.css"),
+    new StaticSiteGeneratorPlugin('main', locals.routes),
   ]
 };

@@ -1,20 +1,10 @@
-@font-face { 
-	font-family: Roboto-l; 
-	src: url('https://fonts.googleapis.com/css?family=Roboto:300'); 
-} 
 
-@font-face { 
-	font-family: Roboto-m; 
-	src: url('https://fonts.googleapis.com/css?family=Roboto:500'); 
-}
-
-.app__profile___2XNad {
+.Profile_top__profile___3Y9Rs {
 	text-align: center;
 	font-family: Roboto-l;
 }
 
-
-.app__profile__image___e5qj3 {
+.Profile_top__image___1v7gD {
     border-radius: 50%;
     margin: 5px;
     align-content: center;
@@ -27,22 +17,17 @@ h3 {
 }
 
 
-.app__profile__location___rtSB8 {
+.Profile_top__location___2pLdM {
 	color: grey;
 }
 
-.app__profile_info___39e1d {
-
-}
 
 hr {
 	width: 250px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	color: lightgrey;
-}
-
-table {
+}.Profile_info__info___3ofLz {
 	width: 200px;
 	color: grey;
 	border-collapse: collapse;
@@ -52,19 +37,19 @@ table {
 }
 
 
-table td {
+.Profile_info__info___3ofLz td {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-bottom: solid 1px;
 	border-color: lightgrey;
 }
 
-.app__profile_info__title___2UFuw {
+.Profile_info__title___37zPr {
 	text-align: left;
 	font-family: Roboto-m;
 
 }
 
-.app__profile_info__descr___4iuoP {
+.Profile_info__descr___1L0RE {
 	text-align: right;
 }

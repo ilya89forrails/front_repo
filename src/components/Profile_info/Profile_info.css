@@ -1,0 +1,26 @@
+.info {
+	width: 200px;
+	color: grey;
+	border-collapse: collapse;
+	margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+
+.info td {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px;
+	border-color: lightgrey;
+}
+
+.title {
+	text-align: left;
+	font-family: Roboto-m;
+
+}
+
+.descr {
+	text-align: right;
+}
