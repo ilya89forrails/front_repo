@@ -20591,9 +20591,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Profile = __webpack_require__(173);
+	var _Profile_top = __webpack_require__(173);
 
-	var _Profile2 = _interopRequireDefault(_Profile);
+	var _Profile_top2 = _interopRequireDefault(_Profile_top);
 
 	var _Profile_info = __webpack_require__(176);
 
@@ -20607,16 +20607,47 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Home = function (_React$Component) {
-	  _inherits(Home, _React$Component);
+	var profiles = [{
+	  name: 'Kirsten McKellar',
+	  location: 'Cape Town, RSA',
+	  photo: 'https://s3.eu-central-1.amazonaws.com/assets-mkdev/courses/frontend/person-userpic.png',
+	  nickname: 'Killa Kella',
+	  tel: '072 143 9920',
+	  birthday: 'July 12, 1988',
+	  gender: 'Female',
+	  language: 'English'
+	}, {
+	  name: 'Bart Simpson',
+	  location: 'Springfield, USA',
+	  photo: 'http://abali.ru/wp-content/uploads/2014/01/Bart-Simpson-01-icon.png',
+	  nickname: 'Bartman',
+	  tel: '555-55-55',
+	  birthday: 'Apil 17, 1987',
+	  gender: 'Male',
+	  language: 'English'
+	}];
 
-	  function Home() {
-	    _classCallCheck(this, Home);
+	var gallery = profiles.map(function (person) {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'profile' },
+	    _react2.default.createElement(_Profile_top2.default, { name: person.name, location: person.location,
+	      photo: person.photo }),
+	    _react2.default.createElement(_Profile_info2.default, { nickname: person.nickname, tel: person.tel,
+	      birthday: person.birthday, gender: person.gender, language: person.language })
+	  );
+	});
 
-	    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+	var Main = function (_React$Component) {
+	  _inherits(Main, _React$Component);
+
+	  function Main() {
+	    _classCallCheck(this, Main);
+
+	    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
 	  }
 
-	  _createClass(Home, [{
+	  _createClass(Main, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -20630,25 +20661,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _react2.default.createElement(
 	          'body',
 	          null,
-	          _react2.default.createElement(_Profile2.default, { name: 'Kirsten McKellar', location: 'Cape Town, RSA',
-	            photo: 'https://s3.eu-central-1.amazonaws.com/assets-mkdev/courses/frontend/person-userpic.png' }),
-	          _react2.default.createElement(_Profile_info2.default, { nickname: 'Killa Kella', tel: '072 143 9920',
-	            birthday: 'July 12, 1988', gender: 'Female', language: 'English' }),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(_Profile2.default, { name: 'Bart Simpson', location: 'Springfield, USA',
-	            photo: 'http://abali.ru/wp-content/uploads/2014/01/Bart-Simpson-01-icon.png' }),
-	          _react2.default.createElement(_Profile_info2.default, { nickname: 'Bartman', tel: '555-55-55',
-	            birthday: 'Apil 17, 1987', gender: 'Male', language: 'English' })
+	          gallery
 	        )
 	      );
 	    }
 	  }]);
 
-	  return Home;
+	  return Main;
 	}(_react2.default.Component);
 
-	exports.default = Home;
+	exports.default = Main;
 
 /***/ },
 /* 173 */
@@ -20666,9 +20688,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Profile = __webpack_require__(174);
+	var _Profile_top = __webpack_require__(174);
 
-	var _Profile2 = _interopRequireDefault(_Profile);
+	var _Profile_top2 = _interopRequireDefault(_Profile_top);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20678,22 +20700,22 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var CoolButton = function (_React$Component) {
-	  _inherits(CoolButton, _React$Component);
+	var ProfileTop = function (_React$Component) {
+	  _inherits(ProfileTop, _React$Component);
 
-	  function CoolButton() {
-	    _classCallCheck(this, CoolButton);
+	  function ProfileTop() {
+	    _classCallCheck(this, ProfileTop);
 
-	    return _possibleConstructorReturn(this, (CoolButton.__proto__ || Object.getPrototypeOf(CoolButton)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (ProfileTop.__proto__ || Object.getPrototypeOf(ProfileTop)).apply(this, arguments));
 	  }
 
-	  _createClass(CoolButton, [{
+	  _createClass(ProfileTop, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: _Profile2.default.profile },
-	        _react2.default.createElement('img', { className: _Profile2.default.image, src: this.props.photo }),
+	        { className: _Profile_top2.default.profile },
+	        _react2.default.createElement('img', { className: _Profile_top2.default.image, src: this.props.photo }),
 	        _react2.default.createElement(
 	          'h3',
 	          null,
@@ -20701,7 +20723,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        ),
 	        _react2.default.createElement(
 	          'label',
-	          { className: _Profile2.default.location },
+	          { className: _Profile_top2.default.location },
 	          this.props.location
 	        ),
 	        _react2.default.createElement('hr', null)
@@ -20709,17 +20731,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }]);
 
-	  return CoolButton;
+	  return ProfileTop;
 	}(_react2.default.Component);
 
-	exports.default = CoolButton;
+	exports.default = ProfileTop;
 
 /***/ },
 /* 174 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"profile":"Profile__profile___MhHcn","image":"Profile__image___3nEn_","location":"Profile__location___1MWA_"};
+	module.exports = {"profile":"Profile_top__profile___3Y9Rs","image":"Profile_top__image___1v7gD","location":"Profile_top__location___2pLdM"};
 
 /***/ },
 /* 175 */,
@@ -20750,16 +20772,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var CoolButton = function (_React$Component) {
-		_inherits(CoolButton, _React$Component);
+	var ProfileInfo = function (_React$Component) {
+		_inherits(ProfileInfo, _React$Component);
 
-		function CoolButton() {
-			_classCallCheck(this, CoolButton);
+		function ProfileInfo() {
+			_classCallCheck(this, ProfileInfo);
 
-			return _possibleConstructorReturn(this, (CoolButton.__proto__ || Object.getPrototypeOf(CoolButton)).apply(this, arguments));
+			return _possibleConstructorReturn(this, (ProfileInfo.__proto__ || Object.getPrototypeOf(ProfileInfo)).apply(this, arguments));
 		}
 
-		_createClass(CoolButton, [{
+		_createClass(ProfileInfo, [{
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
@@ -20839,10 +20861,10 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}]);
 
-		return CoolButton;
+		return ProfileInfo;
 	}(_react2.default.Component);
 
-	exports.default = CoolButton;
+	exports.default = ProfileInfo;
 
 /***/ },
 /* 177 */

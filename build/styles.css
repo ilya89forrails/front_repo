@@ -1,19 +1,10 @@
-@font-face { 
-	font-family: Roboto-l; 
-	src: url('https://fonts.googleapis.com/css?family=Roboto:300'); 
-} 
 
-@font-face { 
-	font-family: Roboto-m; 
-	src: url('https://fonts.googleapis.com/css?family=Roboto:500'); 
-}
-
-.Profile__profile___MhHcn {
+.Profile_top__profile___3Y9Rs {
 	text-align: center;
 	font-family: Roboto-l;
 }
 
-.Profile__image___3nEn_ {
+.Profile_top__image___1v7gD {
     border-radius: 50%;
     margin: 5px;
     align-content: center;
@@ -26,7 +17,7 @@ h3 {
 }
 
 
-.Profile__location___1MWA_ {
+.Profile_top__location___2pLdM {
 	color: grey;
 }
 

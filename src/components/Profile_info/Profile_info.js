@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Profile_info.css'
 
-export default class CoolButton extends React.Component {
+export default class ProfileInfo extends React.Component {
   render() {
     return (
       <table className={styles.info}>

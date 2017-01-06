@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './Profile.css'
+import styles from './Profile_top.css'
 
-export default class CoolButton extends React.Component {
+export default class ProfileTop extends React.Component {
   render() {
     return (
     	<div className={styles.profile} >
